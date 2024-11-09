@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color:#111528;
+    --secondary-text:#232738;
+    --primary-color:#3a435d;
+    --accemt-color:#0071ff;
+}
+.darkmode{
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color:white;
+    --secondary-text:#a4a5b8;
+    --primary-color:#3a435d;
+    --accemt-color:#0071ff;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    /* outline: none; border: none; */
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+body{
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+.menu{
+    
+    height: 40px;
+    width: 45px;
+    border-top-right-radius: 65px;
+    border-bottom-right-radius: 65px;
+    background-color: red;
+    /* visibility: visible; */
+}
+.image{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: relative;
+    top:10px;
+    left: 20%;
+    /* border: 2cm; */
+}
+.photo{
+    position: relative;
+    top: 46%;
+    left:29%
+}
+.container{
+    height: 480px;
+    width: 520px;
+    background-color: rgb(0, 255, 170);
+    border-radius: 8%;
+    position: relative;
+    top:-30px;
+    left: 35%;
+    /* background-color: rgba(rgb(208, 192, 192),rgb(212, 194, 194), rgb(216, 196, 196), 0.2s); */
+}
+.nameholder{
+    position: relative;
+    top: 125%;
+}
+.name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 10%;
+}
+.desgination{
+    text-align: center;
+    font-size: 20px;
+}
+
+.mode{
+width: 80px;
+height: 30px;
+background-color: blue;
+position: relative;
+top: 15%;
+left: 1250px;
+}
+.lbgcontainer{
+width: 190px;
+height: 80px;
+background-color: wheat;
+position: relative;
+left: 35%;
+border-radius: 8px;
+}
+.rbgcontainer{
+width: 190px;
+height: 80px;
+background-color: wheat;
+position: relative;
+left: 172.5%;
+bottom: 50%;
+border-radius: 8px;
+}
+.mail{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    left: 40%;
+    top: 20%;
+}
+/* .cv{
+    width: 130px;
+    height: 50px;
+    background-color: yellow;
+    position: relative;
+    left: 55%;
+    top: 130%;
+} */
+ .downloadbtn{}/* *need to complete*/
+
+/*! for mobile version */
+@media screen and (max-width: 600px) {
+    :root{
+        --base-color: rgb(255, 255, 255);
+        --base-variant: #0525a1;
+        --text-color:#111528;
+        --secondary-text:#232738;
+        --primary-color:#3a435d;
+        --accemt-color:#0071ff;
+    }
+    .mode{
+        width: 30px;
+        height:30px;
+        /* background-color: blue; */
+        background-color: transparent;
+        position: relative;
+        left: 775%;
+        top: 22%;
+        }   
+    .darkmode{
+        --base-color: #101425;
+        --base-variant: #101425;
+        --text-color:white;
+        --secondary-text:#a4a5b8;
+        --primary-color:#3a435d;
+        --accemt-color:#0071ff;
+    }
+    #theme-switch{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        background-color: var(--base-variant);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #theme-switch img:last-child{
+        display: none;
+    }
+    .darkmode #theme-switch img:first-child{
+        display: none;
+    }
+    .darkmode #theme-switch img:last-child{
+        display: block;
+    }
+    
+    .menu{
+    
+        height: 40px;
+        width: 45px;
+        border-top-right-radius: 65px;
+        border-bottom-right-radius: 65px;
+        background-color: red;
+        /* visibility: visible; */
+    }
+   
+    .image{
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+        border-radius: 50%;
+        position: relative;
+        top:10px;
+        left: 4%;
+        /* border: 2cm; */
+    }
+    .container{
+        height: 290px;
+        width: 220px;
+        background-color: rgb(0, 255, 170);
+        border-radius: 8%;
+        position: relative;
+        top:30px;
+        left: 25%;
+        /* background-color: rgba(rgb(208, 192, 192),rgb(212, 194, 194), rgb(216, 196, 196), 0.2s); */
+    }
+    .photo{
+        position: relative;
+        top: 45%;
+        left:22%
+    }
+    .name{
+        font-size: 16.5px;
+        font-weight: bold;
+        top: 100%;
+        
+    }
+    .desgination{
+        font-size: 12px;
+    }
+    .nameholder{
+        position: relative;
+        top: 105%;
+        text-align: center;
+    }
+        .connect{
+            width: 140px;
+            height: 40px;
+            position: relative;
+            left: 17%;
+            padding-top:8.5%;
+        }
+        .lbgcontainer{
+            width: 65px;
+            height: 35px;
+            background-color: rgb(46, 44, 42);
+            position: relative;
+            left: 25.5%;
+            border-radius: 8px;
+        }
+         .rbgcontainer{
+            width: 65px;
+            height: 35px;
+            background-color: rgb(46, 44, 42);
+            position: relative;
+            left: 235%;
+            bottom: 38%;
+            border-radius: 8px;
+        }
+        .mail{
+            width: 20px;
+            height: 15px;
+            position: relative;
+            left: 35%;
+            background-color: transparent;
+        }
+        .call_img{
+            width: 40px;
+            height: 30px;
+            position: relative;
+            right: 10px;
+            bottom: 38%;
+        }
+        .mail_img{
+            width: 40px;
+            height: 30px;
+            position: relative;
+            right: 10px;
+            bottom: 38%;
+        }
+        .cv{
+            width: 150px;
+            height: 50px;
+            /* background-color: rgb(57, 40, 78); */
+            
+            background-image: linear-gradient(rgb(216, 197, 31),rgb(18, 228, 88));
+            position: relative;
+            left: 50%;
+            top: 150%;
+            border-radius: 8px;
+        }
+        .downloadbtn{
+            width: 40px;
+            height: 50px;
+            
+        } /* *need to complete*/
+        .downloadbtn_img{
+            width: 20px;
+            height: 30px;
+            position: relative;
+            top: 1px;
+            left: 55px;
+        }
+        .socialmedia{
+            width: 220px;
+            height: 70px;
+            background-color: transparent;
+            /* background-color: peru; */
+            position: relative;
+            left: 25%;
+            top: 70px;
+        }
+        .linkedin{
+            width: 70px;
+            height: 70px;
+            /* background-color: #0077B5; */
+            background-color: #fff;
+            position: relative;
+            left: 5%;
+            border-radius: 100%;
+        }
+       .linkedin_img{
+        width: 60px;
+        height: 69px;
+        position: relative;
+        left: 8%;
+       }
+        .github{
+            width: 70px;
+            height: 70px;
+            background-color: #ffffff;
+            position: relative;
+            left: 65%;
+            bottom: 100%;
+            border-radius: 100%;
+        }
+        .github_img{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            left: 15%;
+            top: 15%;
+        }
+
+    }
