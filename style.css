@@ -326,7 +326,7 @@ border-radius: 8px;
     .name{
         font-size: 16.5px;
         font-weight: bold;
-        top: 100%;
+        top: 80%;
         
     }
     .desgination{
@@ -334,7 +334,7 @@ border-radius: 8px;
     }
     .nameholder{
         position: relative;
-        top: 80%;
+        top: 60%;
         text-align: center;
     }
         .connect{
