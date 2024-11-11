@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="app.js" defer></script>
     <!-- todo- defer:Its used to activate when html is fully loaded -->
     <title>frontpage</title>
 </head>
 <body>
-    <div class="menu">   
+    <div class="menu">
+        <label>
+            <input type="checkbox">
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="last_line common"></span>
+            </div>
+            <div class="slide">
+                <h1 class="head_">MENU</h1>
+                <ul>
+                    <!-- fa fa-align-justify -->
+                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li><br>
+                    <li><a href="#"><i class="fas fa-brain"></i>Skills</a></li><br>
+                    <li><a href="#"><i class="fas fa-cubes"></i>Project</a></li><br>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i>Interactive Mode</a></li><br>
+                    <li><a href="#"><i class="fas fa-comment-alt"></i>Feedback</a></li>
+                </ul>
+            </div>
+        </label>
         <div class="mode">
             <button id="theme-switch">
                 <img style="height: 24px; width: 24px;" src="Assets/dark_mode.svg" alt="dark">
                 <img style="height: 24px; width: 24px;" src="Assets/light_mode.svg" alt="light">
             </button>
         </div>
+        
+        <!-- <div class="right_slider"> -->
+            <!-- This is left side (RIGHT PULL MENU->) -->
+            <!-- <img class="right_arrow" src="Assets/arrow_forward_ios_58dp.svg" alt="right arrow"> -->
+            
+        <!-- </div>    -->
     </div>
    
 
@@ -31,7 +57,7 @@
         </div>
     </div>
 
-    
+    <br>
     <div class="connect">
         <!-- left background image or icon container -->
         <div class="lbgcontainer">
