@@ -198,6 +198,7 @@ border-radius: 8px;
     .slide{
         height: 100%;
         width: 180px;
+        
         position: absolute;
         background-color: #b3aeae;
         backdrop-filter: blur(5px);
@@ -239,7 +240,7 @@ border-radius: 8px;
         width: 45px;
         border-top-right-radius: 65px;
         border-bottom-right-radius: 65px;
-        background-color: red;
+        background-color: #b3aeae;
         /* visibility: visible; */
     }
     .right_slider{
@@ -313,11 +314,13 @@ border-radius: 8px;
         width: 220px;
         background-color: rgb(0, 255, 170);
         border-radius: 8%;
+        display: block;
         position: relative;
         top:30px;
         left: 25%;
         /* background-color: rgba(rgb(208, 192, 192),rgb(212, 194, 194), rgb(216, 196, 196), 0.2s); */
     }
+
     .photo{
         position: relative;
         top: 45%;
@@ -343,6 +346,7 @@ border-radius: 8px;
             position: relative;
             left: 17%;
             padding-top:8.5%;
+            display: block;
         }
         .lbgcontainer{
             width: 65px;
@@ -471,7 +475,7 @@ border-radius: 8px;
         input{
             display: none;
             visibility: hidden;
-            -webkit-appearance: none;
+            /* -webkit-appearance: none; */
         }
         .toggle .common{
             position: absolute;
@@ -525,6 +529,7 @@ border-radius: 8px;
         input:checked ~ .slide{
             transform: translateX(0);
         }
+        
         .slide{
             height: 100%;
             width: 180px;
@@ -623,6 +628,7 @@ border-radius: 8px;
         position: relative;
         top:30px;
         left: 25%;
+        display: block;
         /* background-color: rgba(rgb(208, 192, 192),rgb(212, 194, 194), rgb(216, 196, 196), 0.2s); */
     }
     .photo{
@@ -650,6 +656,7 @@ border-radius: 8px;
             position: relative;
             left: 17%;
             padding-top:8.5%;
+            display: block;
         }
         .lbgcontainer{
             width: 65px;
