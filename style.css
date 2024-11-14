@@ -666,6 +666,7 @@ border-radius: 8px;
             height: 35px;
             background-color: rgb(46, 44, 42);
             position: relative;
+            top: 6px;
             left: 25.5%;
             border-radius: 8px;
         }
