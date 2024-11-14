@@ -52,8 +52,9 @@ body{
 }
 .photo{
     position: relative;
-    top: 46%;
-    left:29%
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
 }
 .container{
     height: 480px;
@@ -322,9 +323,10 @@ border-radius: 8px;
     }
 
     .photo{
-        position: relative;
-        top: 45%;
-        left:22%
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
     }
     .name{
         font-size: 16.5px;
@@ -632,9 +634,10 @@ border-radius: 8px;
         /* background-color: rgba(rgb(208, 192, 192),rgb(212, 194, 194), rgb(216, 196, 196), 0.2s); */
     }
     .photo{
-        position: relative;
-        top: 45%;
-        left:22%
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
     }
     .name{
         font-size: 16.5px;
