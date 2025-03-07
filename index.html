@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png/svg" href="./Assets/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- 
+    todo: this is for download button.
+    -->
+    <!-- <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/inter.min.css'> -->
+
     <script type="text/javascript" src="app.js" defer></script>
     <!-- todo- defer:Its used to activate when html is fully loaded -->
     <title>frontpage</title>
+    <style>
+        
+    :root{
+        --base-color: rgb(241, 240, 233);
+        --base-variant: #162d86;
+        --text-color:#111528;
+        --secondary-text:#232738;
+        --primary-color:#3a435d;
+        --accemt-color:#0071ff;
+        --menu-color: #b3f5c9;
+        --left-highlight-color: rgba(0, 255, 30, 0.345);
+        --call-color:rgb(174, 234, 148);
+        --email-color:rgb(177, 151, 252);
+        --github-color:rgb(132, 8, 132);
+        --linkedin-color:rgb(10, 102, 194);
+    }
+    .darkmode{
+        --base-color: #070b1d;
+        --base-variant: #101425;
+        --text-color:white;
+        --secondary-text:#a4a5b8;
+        --primary-color:#3a435d;
+        --accemt-color:#0071ff;
+        --menu-color:#f5deb3;   
+        --left-highlight-color:rgb(245, 222, 179);
+        --call-color:rgb(0, 0, 255);
+        --email-color:rgb(255, 214, 90);
+        --github-color:rgb(255, 255, 255);
+        --linkedin-color:rgb(10, 102, 194);
+    }
+
+    </style>
 </head>
 <body>
     <div class="menu">
@@ -16,20 +56,22 @@
             <div class="toggle">
                 <span class="top_line common"></span>
                 <span class="middle_line common"></span>
-                <span class="last_line common"></span>
-            </div>
+                <span class="last_line common"  ></span>
+            </div>  
+            
             <div class="slide">
                 <h1 class="head_">MENU</h1>
                 <ul>
                     <!-- fa fa-align-justify -->
-                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li><br>
-                    <li><a href="#"><i class="fas fa-brain"></i>Skills</a></li><br>
-                    <li><a href="#"><i class="fas fa-cubes"></i>Project</a></li><br>
-                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i>Interactive Mode</a></li><br>
-                    <li><a href="#"><i class="fas fa-comment-alt"></i>Feedback</a></li>
+                    <li><a href="#"><i class="fa fa-home fa-2x"></i>Home</a></li><br><br> 
+                    <li><a href="skill.html"><i class="fas fa-brain fa-2x"></i>Skills</a></li><br><br>
+                    <li><a href="#"><i class="fas fa-cubes fa-2x"></i>Project</a></li><br><br>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher fa-2x"></i> Interactive Mode</a></li><br><br>
+                    <li><a href="#"><i class="fas fa-comment-alt fa-2x"></i>Feedback</a></li>
                 </ul>
             </div>
         </label>
+        
         <div class="mode">
             <button id="theme-switch">
                 <img style="height: 24px; width: 24px;" src="Assets/dark_mode.svg" alt="dark">
@@ -44,42 +86,84 @@
         <!-- </div>    -->
     </div>
    
-
-    <!-- This is image container -->
-    <div class="container">
-        <div class="image">
-            <!-- place photo here -->
-            <img src="Assets/passport.jpg" alt="add your image" class="photo">
-            <div class="nameholder">
-                <p class="name">B.HARI KRISHNA KUMAR</p>
-                <p class="desgination">Full Stack Developer</p>
-            </div>
+    <div class="holder">
+        <div class="circle">
+            <img class="photo" src="Assets/passport copy.jpg" alt="Hari Krishna Kumar" /> 
+        </div> 
+        <div class="nameholder">
+            <!-- <br><br><br><br><br><br><br><br><br><br> -->
+            <p class="name">B.HARI KRISHNA KUMAR</p>
+            <p class="desgination">Full Stack Developer</p>
         </div>
     </div>
+    
+    
 
     <br>
     <div class="connect">
+
         <!-- left background image or icon container -->
+
+        <!-- 
+                    todo: This is for Call button  
+        -->
         <div class="lbgcontainer">
             <a href="tel:919449445802">
-            <div class="mail"><img class="call_img" src="Assets/phone.svg" alt="call"></div></a>
+                <div class="call">
+                    <i id="call" class="fa-solid fa-phone fa-3x" style="color: var(--call-color);"></i>
+                </div>
+            </a>
         
-        <!-- right background image or icon container -->
-        <div class="rbgcontainer"><a href="mailto:harikrishnamrb@gmail.com">
-            <div class="mail"><img class="mail_img" src="Assets/mail.svg" alt="mail"></div></a>
-        </div><!--this is closing of lbgcontainer-->
+            
+            <!-- right background image or icon container -->
+            
+            <!-- 
+                    todo: This is for mail button  
+            -->            
+            <div class="rbgcontainer">
+                <a href="mailto:harikrishnamrb@gmail.com">
+                    <div class="mail">
+                            <i class="fa-solid fa-envelope fa-3x" style="color: var(--email-color);"></i>
+                    </div>
+                </a>
+            </div>
+            <!--this is closing of rbgcontainer-->
+
+        </div>
+        <!--this is closing of lbgcontainer-->
+        <a target="_blank" style="text-decoration: none; font-size: medium; text-align: center;" href="Assets/Resume.pdf"><button class="download">Resume</button></a>
+        
+
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/hari-krishna-kumar-0679592a7">
+                <i class="fa-brands fa-linkedin fa-3x" style="color: var(--linkedin-color);"></i>
+                <!-- <img class="linkedin_img" src="Assets/linkedin_color.svg" alt="linkedin"> -->
+            </a>
+        </div>
+
+        <div class="github">
+            <a href="https://github.com/HariKrishnaKumar">
+                <i class="fa-brands fa-github fa-3x" style="color: var(--github-color);"></i>
+                <!-- <img class="github_img" src="Assets/github.svg" alt="github"> -->
+            </a>
+        </div> 
+        
+
     </div>
     
-    
-    <br><br><div class="cv">
-        <a style="text-decoration: none; font-size: medium; text-align: center;" href="Assets/Resume.docx">&nbsp;&nbsp;&nbsp;&nbsp;Download CV<div class="downloadbtn"><img class="downloadbtn_img" src="Assets/download.svg" alt="download"></div></a>
+    <div class="content">
+        <div class ="auto_container">
+            <h4 class="auto">
+                
+                Hello, my name is Hari, I bring a strong foundation in <span class="auto-type">Freelancer</span>, particularly with Django. <br><br>
+                <br>With a solid understanding of HTML5, CSS3, JavaScript, and popular Front-end frameworks, I've successfully built responsive, user-friendly, and high-performance web applications. <br><br> Additionally, my expertise in Python and Django enables me to design and develop robust, scalable, and maintainable back-end systems. <br><br>
+                I'm confident that my passion for coding, problem-solving skills, and experience with Front-end and Django make me a strong fit for this role. <br><br> I'm looking forward to discussing my qualifications further and exploring how I can contribute to the team's success.
+                <br>While I lack professional experience, I possess a strong theoretical understanding of Python, Django/Flask, and React. <br><br> understand version control with Git. I prioritize clean, efficient code and am a quick learner, ready to adapt. <br><br> I'm passionate about problem-solving and committed to continuous improvement. I'm excited to contribute to a team and build impactful web applications.
+            </h4>
+        </div>
     </div>
 
-
-    <div class="socialmedia">
-        <div class="linkedin"><a href="https://www.linkedin.com/in/hari-krishna-kumar-0679592a7"><img class="linkedin_img" src="Assets/linkedin_color.svg" alt="linkedin"></div></a>
-        <div class="github"><a href="https://github.com/HariKrishnaKumar"><img class="github_img" src="Assets/github.svg" alt="github"></div></a>  
-    </div>
  
 </body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </html>

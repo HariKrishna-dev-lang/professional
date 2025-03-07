@@ -72,3 +72,55 @@ tabletQuery.addListener(handleScreenChange);
 desktopQuery.addListener(handleScreenChange);
 
 handleScreenChange(mobileQuery); handleScreenChange(tabletQuery); handleScreenChange(desktopQuery);
+
+//this is auto typed js  
+var typed=new Typed(".auto-type",{
+    strings:["Programmer","Freelancer","PCDoc","Web-developer","Front-End Developer","Back-end Developer","Data Scientiest","Python Fullstack dev"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    looped:true
+})
+
+// this for change the behaviour of the check box(menu) when ever it's clicked 👇
+document.getElementById('hideCheckbox').addEventListener('change', function() {
+    const h4Content = document.querySelector('.auto');
+    const originalContent = h4Content.dataset.original || h4Content.innerHTML;
+
+    if (this.checked) {
+        // Store original content and clear
+        h4Content.dataset.original = originalContent;
+        h4Content.innerHTML = '';
+    } else {
+        // Restore original content
+        h4Content.innerHTML = originalContent;
+    }
+});
+
+document.getElementById('hideCheckbox').addEventListener('change', function() {
+    const elementsToHide = [
+        document.querySelector('.auto'),       // The h4 content
+        document.querySelector('.holder')     // The profile holder section
+    ];
+
+    elementsToHide.forEach(element => {
+        if (this.checked) {
+            element.style.display = 'none';
+        } else {
+            element.style.display = 'block';  // or '' to revert to original
+        }
+    });
+});
+
+document.getElementById('hideCheckbox').addEventListener('change', function() {
+    const elementsToHide = document.querySelectorAll('.auto, .holder');
+    
+    if (this.checked) {
+        // Hide elements when checked
+        elementsToHide.forEach(el => el.classList.add('hidden'));
+    } else {
+        // Refresh page when unchecked
+        location.reload(true); // true forces reload from server
+    }
+});
+// end 
+
